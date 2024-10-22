@@ -1,0 +1,196 @@
+body{
+    margin: 0px;
+}
+.todo-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 3%;
+    background-image: linear-gradient(100deg, #62aab2, #001f29);
+    color: rgb(211, 195, 195);
+    transition: 0.3s linear;
+    overflow: hidden;
+  }
+  
+  .header,
+  .form,
+  .datetime {
+    margin: 0 1rem;
+    min-height: 10vh;
+    width: 100%;
+  }
+  
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 4rem;
+    min-height: 25vh;
+    width: 100%;
+  }
+  
+  section h1 {
+    color: #d08306;
+     text-shadow: 3px 2px 5px #e4d8d8; 
+    font-size: 4.8rem;
+    text-align: center;
+  }
+  
+  .date-time {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 0.8rem;
+    width: 100%;
+  }
+  
+  form input {
+    padding: 15px;
+    font-size: 1.09rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    outline: none;
+    /* border-radius: 15; */
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+    background-color: #dfe6ed;
+    color: black;
+  }
+  
+  form input:hover {
+    cursor: text;
+  }
+  
+  form input::placeholder {
+    color: rgb(108, 103, 103);
+    opacity: 0.7;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+    background-color: #2c3e50;
+    color: rgb(21, 20, 20);
+  }
+  
+  form button:hover {
+    cursor: pointer;
+    background-color: #f1c40f;
+  }
+  
+  form button {
+    padding: 15.4px;
+    font-size: 17px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 100px;
+    background-color: #5dade2;
+    color: white;
+  }
+  
+  span {
+    margin-right: 3.2rem;
+  }
+  
+  .myUnOrdList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .todo-list {
+    min-width: 25%;
+  
+    /* To remove the bullets of unordered list */
+    list-style: none;
+  }
+  
+  .todo-item {
+    margin: 1.4rem;
+    /*word-wrap: break-word;
+      */ /*flex-wrap: wrap;
+      */
+    font-size: 15px;
+    color: #1c2833;
+    border-radius: 30px;
+    transition: background-color 200ms ease-in-out;
+    background-color: #f2f3f4;
+    min-width: 3rem;
+    max-width: 4000rem;
+    padding: .6rem 1rem;
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 0.3fr;
+    justify-content: start;
+    gap: 1.6rem;
+    /*align-items: center;
+      */ /*wrapsthelinks*/
+    overflow-wrap: anywhere;
+  }
+  
+  li span {
+    max-width: 20rem;
+    color: #1c2833;
+  }
+  
+  .check-btn,
+  .delete-btn {
+    font-size: 1rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 80%;
+    margin: 0 3px;
+    background-color: #fff;
+    color: rgb(31, 28, 28);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .check-btn {
+    color: #fff;
+    background-color: #2ecc71;
+  }
+  
+  .delete-btn {
+    color: #fff;
+    background-color: #e74c3c;
+  }
+  
+  .checkList {
+    text-decoration: line-through;
+  }
+  
+  .notCheckList {
+    text-decoration: none;
+  }
+  
+  .clear-btn {
+    background-color:#d02a17 ;
+    font-size: 0.8rem;
+    padding: 1rem 0.9rem;
+    border-radius: 0.9rem;
+    font-weight: bold;
+    color: #e4d8d8;
+    /* -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem; */
+  }
+  
+  .clear-btn:hover {
+    background-color: #e74c3c;
+  }
